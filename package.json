@@ -1,0 +1,25 @@
+{
+  "name": "ruinedcityofapes",
+  "version": "1.0.0",
+  "description": "A masterpiece intended to add some spice to the life of a Ruined City ape.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickBurnett/ruinedcityofapes.git"
+  },
+  "author": "Nicolas Burnett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickBurnett/ruinedcityofapes/issues"
+  },
+  "homepage": "https://github.com/NickBurnett/ruinedcityofapes#readme",
+  "dependencies": {
+    "discord.js": "^13.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}
