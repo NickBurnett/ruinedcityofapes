@@ -1,7 +1,16 @@
 {
   "token": "OTc4MDQ1MjE3OTAwOTk0NjQx.Ge1pO3.BHcc2VfYw7Qhp0I9UkFXBjyJq8FbzaXG2hBicQ",
   "activity": "Eric bitch :D",
-  "disconnect": [
-    "429493516113149952"
+  "users": {
+    "disconnect": [
+      "429493516113149952"
+    ],
+    "message": [
+      "429493516113149952"
+    ]
+  },
+  "message_replies": [
+    "Shut the fuck up.",
+    "Any askers??"
   ]
 }

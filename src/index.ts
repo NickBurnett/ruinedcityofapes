@@ -1,12 +1,16 @@
-import { Client, Intents } from 'discord.js';
 import { client } from './api/client';
 import config from './config.json';
 import Event from './api/event';
 import ReadyEvent from './event/ready';
 import logger from './api/logger';
 import VoiceStateUpdateEvent from './event/voiceStateUpdate';
+import MessageCreatedEvent from './event/messageCreated';
 
-const events: Event[] = [new ReadyEvent(), new VoiceStateUpdateEvent()];
+const events: Event[] = [
+  new ReadyEvent(),
+  new VoiceStateUpdateEvent(),
+  new MessageCreatedEvent(),
+];
 
 events.forEach((event) => {
   client.on(event.name, event.handle);
