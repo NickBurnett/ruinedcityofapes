@@ -1,5 +1,6 @@
 import { Interaction } from 'discord.js';
 import {
+  AudioPlayerStatus,
   createAudioPlayer,
   createAudioResource,
   DiscordGatewayAdapterCreator,
@@ -40,6 +41,9 @@ export default class ThomussyCommand extends Command {
     );
     audioPlayer.play(audioResource);
     connection.subscribe(audioPlayer);
+    audioPlayer.on(AudioPlayerStatus.Idle, (oldState, newState) => {
+      connection.destroy();
+    });
 
     interaction.reply({
       content: ';)',
